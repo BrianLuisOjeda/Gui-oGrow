@@ -1,0 +1,9 @@
+.cardNavegacion{
+    width: 12.5rem;
+    margin: 1rem 1rem 3rem 1rem;
+    box-shadow: 2px 2px 5px #999;
+}
+.titulo{
+    font-size: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.containerGuiño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icono{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.tituloo{
+    color: white;
+}

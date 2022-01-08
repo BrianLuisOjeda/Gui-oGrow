@@ -1,0 +1,12 @@
+.containerCondiciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: white;
+}
+.parrafo{
+    color: white;
+}

@@ -1,0 +1,33 @@
+.containerMetods {
+    margin: 50px 0px 50px 0px;
+
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    align-content: center;
+}
+
+.containerComentarios {
+    height: 550px;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-business-game-laptop-e-commerce-poster-banner-image_192358.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    margin: 40px 0px 40px 0px;
+    padding: 0px;
+    box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    
+}
+
+.tituloComentarios{
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 700px;
+    margin-bottom: 20px;
+    
+}

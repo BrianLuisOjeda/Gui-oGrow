@@ -1,6 +1,14 @@
 .itemListContainer{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 5.6rem;
+    padding: 1.5rem 5.6rem 5.6rem 5.6rem;
+}
+.containerNavegacionInter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }

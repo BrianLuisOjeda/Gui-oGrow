@@ -1,0 +1,9 @@
+.fotoComentario {
+    width: 10rem;
+    background: #000000; 
+	border: solid #BDBDBD 0; 
+	opacity: 0.9; 
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 87); /* // for IE8 */
+	filter: alpha(opacity= 87); /* //for IE5-7 */
+    
+}

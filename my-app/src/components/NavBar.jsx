@@ -8,7 +8,7 @@ import './NavBar.css'
 const NavBar = () => {
     return (
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar classNme='navbar' bg="light" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#">GuiñoGuiñoGrow</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,12 +19,13 @@ const NavBar = () => {
                             navbarScroll
                         >
                             <Nav.Link className='secciones'>
-                                <Link className='nav-link' to='/'>Home</Link>
-                            
-                                </Nav.Link>
+                                <Link className='nav-link' to='/'>
+                                    Home
+                                </Link>
+                            </Nav.Link>
                             <NavDropdown className='secciones' title="Categorias" id="navbarScrollingDropdown">
                                 <NavDropdown.Item>
-                                    <Link className='nav-link' to='/Categorias/seedStockers'>
+                                    <Link className='nav-link' to='/Categorias/SeedStockers'>
                                         SeedStockers
                                     </Link>
                                 </NavDropdown.Item>
