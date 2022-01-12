@@ -1,15 +1,11 @@
 import React from 'react'
-import {Card} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 import './NavegacionInter.css'
 
 const NavegacionInter = (props) => {
     return (
         <>
-            <Card className='cardNavegacion'>
-                <Card.Body>
-                    <Card.Title className='titulo'>{props.titulo}</Card.Title>
-                </Card.Body>
-            </Card>
+          <Button className='buttonNavegacionInter' variant="outline-primary">{props.titulo}</Button>{' '}
         </>
     )
 }

@@ -8,7 +8,7 @@ const RedSocials = () => {
     return (
         <>
             <Container fluid className='containerRedSocials'>
-                <h5 className='titulo'>Nuestras redes sociales</h5>
+                <h5 className='tituloRedSocials'>Nuestras redes sociales</h5>
                 <div className='redesSociales'>
                     <FaFacebookSquare className='cartwidget' />
                     <BsInstagram className='cartwidget' />

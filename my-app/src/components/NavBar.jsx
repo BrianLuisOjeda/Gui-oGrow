@@ -10,7 +10,11 @@ const NavBar = () => {
         <>
             <Navbar classNme='navbar' bg="light" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#">GuiñoGuiñoGrow</Navbar.Brand>
+                    <Navbar.Brand>
+                        <Link className='nav-link' to='/'>
+                            GuiñoGuiñoGrow
+                        </Link>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -29,18 +33,24 @@ const NavBar = () => {
                                         SeedStockers
                                     </Link>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4">R-kiem</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action5">
                                     Something else here
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link className='secciones'>Acerca de nosotros</Nav.Link>
-                            <Nav.Link className='secciones'>Contacto</Nav.Link>
+                            <Nav.Link className='secciones'>
+                                Acerca de nosotros
+                            </Nav.Link>
+                            <Nav.Link className='secciones'>
+                                <Link className='nav-link' to='/Contacto'>
+                                    Contacto
+                                </Link>
+                            </Nav.Link>
                         </Nav>
-                        <BsFillCartFill className='cartwidget' />
-                        <FaFacebookSquare className='cartwidget' />
-                        <BsInstagram className='cartwidget' />
+                        <BsFillCartFill className='cartwidgets' />
+                        <FaFacebookSquare className='cartwidgets' />
+                        <BsInstagram className='cartwidgets' />
 
                     </Navbar.Collapse>
                 </Container>

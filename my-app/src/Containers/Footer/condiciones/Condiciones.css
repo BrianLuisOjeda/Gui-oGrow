@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
 }
-.titulo{
+.tituloCondiciones{
     color: white;
 }
 .parrafo{
     color: white;
+    text-align: center;
 }

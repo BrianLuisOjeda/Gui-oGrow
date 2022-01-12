@@ -15,8 +15,6 @@ const Item = ({ producto }) => {
                                  {producto.crusa}
                             </Card.Subtitle>
                             <Card.Text>
-                                <p>Dominante: {producto.dominante}</p>
-                                <p>THC: {producto.THC}</p>   
                                 
                             </Card.Text>
                         </Card.Body>
