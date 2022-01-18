@@ -48,7 +48,9 @@ const NavBar = () => {
                                 </Link>
                             </Nav.Link>
                         </Nav>
-                        <BsFillCartFill className='cartwidgets' />
+                        <Link className='nav-link' to='/Cart'>
+                            <BsFillCartFill className='cartwidgets' />
+                        </Link>
                         <FaFacebookSquare className='cartwidgets' />
                         <BsInstagram className='cartwidgets' />
 

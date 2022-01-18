@@ -1,10 +1,46 @@
-.card {
-    box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
-    -webkit-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
-    -moz-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
-}
+
 
 .containerTitulo {
     padding: 0px;
     text-align: center;
+}
+
+.tituloMetods{
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .cardMetods{
+        max-height: max-content;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    .cardMetods{
+        width: 10rem;
+        max-height: max-content;
+        margin: 20px;
+    }
+    .tituloMetods{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px){
+    .cardMetods{
+        width: max-content;
+        max-height: max-content;
+        margin: 20px;
+    }
+}
+@media (min-width: 1199.98px){
+    .cardMetods{
+        width: 18rem;
+        box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+        -webkit-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+        max-height: max-content;
+        margin: 60px;
+    }
 }

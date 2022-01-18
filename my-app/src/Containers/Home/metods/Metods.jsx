@@ -1,30 +1,28 @@
 import React from 'react'
-import { Card, Container, Row, Col } from 'react-bootstrap'
+import { Card, Container, Row } from 'react-bootstrap'
 import Modals from '../modals/Modals'
 import './metods.css'
 
 const Metods = (props) => {
     return (
         <>
-            <Card className='card' style={{ width: '18rem' }}>
+            <Card className='cardMetods'>
                 <Container>
                     <Row>
                         {props.children}
                     </Row>
                 </Container>
                 <Card.Body>
-                    <Container className='containerTitulo'>
-                        <Row>
-                            <Col>
-                                <Card.Title>
-                                    {props.titulo}
-                                </Card.Title>
-                            </Col>
-                        </Row>
-                    </Container>
+
+                    <Card.Title>
+                        <p className='tituloMetods'>
+                            {props.titulo}
+                        </p>
+                    </Card.Title>
+
                     <Container>
                         <Row>
-                            <Modals vermas='Ver mas' modalTitulo={props.titulo}/>
+                            <Modals vermas='Ver' modalTitulo={props.titulo} />
                         </Row>
                     </Container>
 

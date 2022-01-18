@@ -9,3 +9,34 @@
     text-align: center;
     color: black;
 }
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .buttonNavegacionInter{
+        width: 5rem;
+        height: 4rem;
+        margin: 10px;
+        box-shadow: 2px 2px 5px #999;
+    }
+    
+}
+
+@media (min-width: 480.5px) and (max-width: 575.5px){
+
+    .buttonNavegacionInter{
+        width: 7.5rem;
+        height: 4rem;
+        margin: 10px;
+        box-shadow: 2px 2px 5px #999;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    .buttonNavegacionInter{
+        width: 8.5rem;
+        height: 4rem;
+        margin: 10px;
+        box-shadow: 2px 2px 5px #999;
+    }
+}

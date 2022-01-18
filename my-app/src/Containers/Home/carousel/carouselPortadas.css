@@ -1,3 +1,15 @@
 .imgCarousel{
     max-height: 400px;
 }
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    .imgCarousel{
+        height: 250px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .imgCarousel{
+        height: 150px;
+    }
+}

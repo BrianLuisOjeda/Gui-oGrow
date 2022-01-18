@@ -1,0 +1,9 @@
+.cardDetalle {
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+}
+
+

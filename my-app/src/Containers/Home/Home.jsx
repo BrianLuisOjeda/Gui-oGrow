@@ -16,26 +16,23 @@ const Home = () => {
             <CarouselPortadas />
 
             <Container fluid className='containerMetods'>
-                <Container>
-                    <Row>
-                        <Col>
-                            <Metods titulo='Metodo de pago'>
-                                <BsCurrencyDollar className='icon' />
+                    <Row >
+                        <Col sm={4} md={4} lg={4}>
+                            <Metods titulo='Pago'>
+                                <BsCurrencyDollar className='iconMetods' />
                             </Metods>
                         </Col>
-                        <Col>
+                        <Col className='align-items-center' sm={4} md={4} lg={4}>
                             <Metods titulo='Productos' >
-                                <FaCannabis className='icon' />
+                                <FaCannabis className='iconMetods' />
                             </Metods>
                         </Col>
-                        <Col>
-                            <Metods titulo='Metodo de envio' >
-                                <MdLocalShipping className='icon' />
+                        <Col className='align-items-center' sm={4} md={4} lg={4}>
+                            <Metods titulo='Envio' >
+                                <MdLocalShipping className='iconMetods' />
                             </Metods>
                         </Col>
-
                     </Row>
-                </Container>
             </Container>
             <Container fluid>
                 <CultivoClientes />
