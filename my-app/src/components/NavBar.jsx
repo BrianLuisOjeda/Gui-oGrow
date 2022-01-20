@@ -3,6 +3,7 @@ import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsFillCartFill, BsInstagram } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import Auth from '../auth/Auth'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -40,20 +41,19 @@ const NavBar = () => {
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link className='secciones'>
-                                Acerca de nosotros
-                            </Nav.Link>
-                            <Nav.Link className='secciones'>
                                 <Link className='nav-link' to='/Contacto'>
                                     Contacto
                                 </Link>
                             </Nav.Link>
+                            <Nav.Link classNAME='secciones'>
+                                <Link className='nav-link' to='/Cart'>
+                                    <BsFillCartFill className='cartwidgets' />
+                                </Link>
+                            </Nav.Link>
                         </Nav>
-                        <Link className='nav-link' to='/Cart'>
-                            <BsFillCartFill className='cartwidgets' />
-                        </Link>
                         <FaFacebookSquare className='cartwidgets' />
-                        <BsInstagram className='cartwidgets' />
-
+                        <BsInstagram className='cartwidgets' />                  
+                        <Auth className='nav-link'/>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

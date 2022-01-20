@@ -5,20 +5,15 @@ import { Row, Container, Col } from 'react-bootstrap'
 const Comentarios = () => {
     return (
         <>
-            <Container>
-                <Row>
-                    <Col>
+            <Container fluid>
+                <Row lg={8}>
+                    <Col lg={4}>
                         <Comentario />
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
+                    <Col lg={4}>
                         <Comentario />
                     </Col>
-                </Row>
-
-                <Row>
-                    <Col>
+                    <Col lg={4}>
                         <Comentario />
                     </Col>
                 </Row>

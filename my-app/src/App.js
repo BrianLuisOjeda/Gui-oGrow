@@ -7,13 +7,26 @@ import Contacto from './Containers/Contacto/Contacto'
 import ItemListContainer from './Containers/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './Containers/ItemDetailContainer/ItemDetailContainer'
 import Cart from './Containers/Cart/Cart'
+import Logueo from './auth/Logueo'
+import { useState, useEffect } from 'react'
+import {app} from './firebase'
 
 
 function App() {
 
+  const [usuario, setUsuario] = useState(null)
+
+    useEffect(() => {
+        app
+        .auth()
+        .onAuthStateChanged((usuarioFirebase) => {
+            setUsuario(usuarioFirebase)
+        })
+    },[])
+
   return (
     <>
-        <CartContextProvider>
+    {usuario ? <CartContextProvider>
         <BrowserRouter>
                 <Navbar/>
                 <Routes>
@@ -27,7 +40,9 @@ function App() {
                     <Route exact path='/detalle/:idProduct' element={ <ItemDetailContainer/> } />
                 </Routes>   
             </BrowserRouter>
-        </CartContextProvider>
+        </CartContextProvider> 
+        : <Logueo setUsuario={setUsuario}/>}
+        
             
         
     </>

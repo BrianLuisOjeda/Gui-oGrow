@@ -3,6 +3,9 @@
     padding: 1rem;
     width: 14.5rem;
     max-height: 416px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -13,10 +16,12 @@
         padding: 0rem;
         max-height: 272px;
     }
-    .tituloCardItem{
+
+    .tituloCardItem {
         font-size: 10px;
     }
-    .subTituloCardItem{
+
+    .subTituloCardItem {
         font-size: 9px;
     }
 
@@ -28,10 +33,12 @@
         margin: 1rem;
         padding: 0rem;
     }
-    .tituloCardItem{
+
+    .tituloCardItem {
         font-size: 13px;
     }
-    .subTituloCardItem{
+
+    .subTituloCardItem {
         font-size: 11px;
     }
 

@@ -4,6 +4,9 @@ import Formulario from './form/Formulario'
 import './contacto.css'
 
 const Contacto = () => {
+
+
+
     return (
         <>
             <Container fluid className='containerMayor'>
@@ -15,7 +18,6 @@ const Contacto = () => {
                     <Formulario />
                 </Container>
             </Container>
-
         </>
     )
 }

@@ -15,7 +15,7 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         const db = getFirestore();
-
+        
         if (Auto) {
             const dbQuery = db.collection('productos')
             const productosAutos = dbQuery.where('tipo', '==', Auto)
@@ -26,10 +26,10 @@ const ItemListContainer = () => {
 
         } else if (CBD) {
             const dbQuery = db.collection('productos')
-            const productosAutos = dbQuery.where('subtipo', '==', CBD).where('CBD', '==', 'Medicinal')
+            const productosAutos = dbQuery.where('subtipo', '==', CBD).where(CBD, '==', 'Medicinal')
             productosAutos.get()
                 .then(data => setProducts(data.docs.map(item => ({ id: item.id, ...item.data() }))))
-                .catch(error => console.log('productos no encontrados'))
+                .catch(error => console.log(error))
                 .finally(setLoading(false))
         } else if (Fem) {
             const dbQuery = db.collection('productos')

@@ -1,0 +1,40 @@
+.containerCardLogueo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-image: url('https://www.growshopstore.es//wp-content/uploads/2016/11/cannabis.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.containerSuperior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    background-color: #CEE5D0;
+    box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 3px 2px 83px -29px rgba(0, 0, 0, 0.29);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    margin: 0.7rem;
+}
+
+.botonRegistro {
+    margin: 0.6rem;
+    width: max-content;
+}
