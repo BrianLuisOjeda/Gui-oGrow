@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
 import { Button } from 'react-bootstrap'
 import TableCartList from './TableCartList'
-import { Table, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import './Cart.css'
 
 const Cart = () => {
@@ -11,26 +11,20 @@ const Cart = () => {
     const { cartList, vaciarCarrito } = useContext(CartContext)
     return (
         <>
-            <Container fluid className='containerCart'>
-                <Table striped bordered hover>
-                    <thead>
-                        <tr>
-                            
-                            <th></th>
-                            <th>Nombre</th>
-                            <th>Cantidad</th>
-                        </tr>
-                    </thead>
-                    {cartList.map(prod => {
-                        return (
-                            <TableCartList prod={prod} />
-                        )
+            {cartList.length === 0 ? <h1>tu carrito esta vacio</h1> : <Container fluid className='containerCart'>
+                {cartList.map(prod => {
+                    return (
+                        <TableCartList prod={prod} />
+                    )
 
-                    })}
-                </Table>
-                <Button onClick={vaciarCarrito}>Vaciar carrito</Button>
-                
-            </Container>
+                })}
+                <Button
+                    variant='danger'
+                    onClick={vaciarCarrito}>
+                    Vaciar carrito
+                </Button>
+
+            </Container>}
 
         </>
     )

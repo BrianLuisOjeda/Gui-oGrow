@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
-import { FaFacebookSquare } from "react-icons/fa";
-import { BsFillCartFill, BsInstagram } from "react-icons/bs";
+//import { FaFacebookSquare } from "react-icons/fa";
+import { BsFillCartFill } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import Auth from '../auth/Auth'
 import './NavBar.css'
@@ -35,10 +35,7 @@ const NavBar = () => {
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">R-kiem</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
-                                </NavDropdown.Item>
+                                
                             </NavDropdown>
                             <Nav.Link className='secciones'>
                                 <Link className='nav-link' to='/Contacto'>
@@ -51,8 +48,8 @@ const NavBar = () => {
                                 </Link>
                             </Nav.Link>
                         </Nav>
-                        <FaFacebookSquare className='cartwidgets' />
-                        <BsInstagram className='cartwidgets' />                  
+                        {/*<FaFacebookSquare className='cartwidgets' />
+                        <BsInstagram className='cartwidgets' />*/}                  
                         <Auth className='nav-link'/>
                     </Navbar.Collapse>
                 </Container>

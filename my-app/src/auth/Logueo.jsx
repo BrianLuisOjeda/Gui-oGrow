@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react'
-import { Button, Container, Row, Col, Card, Navbar, Nav } from 'react-bootstrap'
+import { Button, Container, Card, Navbar, Nav, Form } from 'react-bootstrap'
 import { app } from '../firebase'
 import './Logueo.css'
 
 const Logueo = (props) => {
 
     const [isRegistrando, setIsRegistrando] = useState(false)
+
 
     const crearUsuario = (correo, contraseña) => {
         app
@@ -61,31 +62,24 @@ const Logueo = (props) => {
         <Container fluid className='containerCardLogueo'>
             <Card className='containerSuperior'>
                 <h1>{isRegistrando ? 'Registrate' : 'Inicia sesion'}</h1>
-                <form
-                    className='form'
-                    style={{ width: '100%' }}
-                    onSubmit={submitHandler}>
-                    <input
-                        className='input'
-                        type="email"
-                        id='email' />
-                    <input
-                        className='input'
-                        type="password"
-                        id='password' />
-                    <Row>
-                        <Col lg={6}>
-                            <Button
-                                className='botonRegistro'
-                                variant="primary"
-                                type='submit'>
-                                {isRegistrando ?
-                                    'Registrarme'
-                                    : 'Iniciar sesion'}
-                            </Button>
-                        </Col>
-                    </Row>
-                </form>
+                <Form onSubmit={submitHandler}>
+                    <Form.Group className="mb-3" controlId="email">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" placeholder="Ingrese su email" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="password">
+                        <Form.Label>Contraseña</Form.Label>
+                        <Form.Control type="password" placeholder="Ingrese su contraseña" />
+                    </Form.Group>
+                    <Button
+                        className='botonRegistro'
+                        variant="primary"
+                        type='submit'>
+                        {isRegistrando ?
+                            'Registrarme'
+                            : 'Iniciar sesion'}
+                    </Button>
+                </Form>
             </Card>
         </Container>
 
